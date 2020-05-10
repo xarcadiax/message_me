@@ -12,3 +12,5 @@ User.create(username: "Lili", password: "password")
 User.create(username: "Salem", password: "password")
 User.create(username: "Cool Ted", password: "password")
 User.create(username: "Gandalf", password: "password")
+
+Message.create(body: "Hi, im another message", user: User.find(2))

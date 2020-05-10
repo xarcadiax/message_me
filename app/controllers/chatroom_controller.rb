@@ -1,7 +1,6 @@
 class ChatroomController < ApplicationController
-    def login
-    end
-    
+
     def index
+        @messages = Message.all #Create instance variable
     end
 end
