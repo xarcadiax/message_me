@@ -1,6 +1,8 @@
 class ChatroomController < ApplicationController
-
-    def index
-        @messages = Message.all #Create instance variable
-    end
+  before_action :require_user
+  
+  def index
+      @message = Message.new
+      @messages = Message.all #Create instance variable
+  end
 end
